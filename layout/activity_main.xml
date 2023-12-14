@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/nameTV"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="20dp"-->
+<!--        android:text="Sharifullah"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="#03A9F4"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/callBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Call Now"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/nameTV"-->
+<!--        app:layout_constraintStart_toStartOf="@id/nameTV"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/nameTV"-->
+<!--        android:paddingStart="60dp"-->
+<!--        android:paddingEnd="60dp"-->
+<!--        android:paddingTop="15dp"-->
+<!--        android:paddingBottom="15dp"-->
+<!--        android:backgroundTint="#009688"-->
+<!--        android:fontFamily="@font/poppins"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:hint="Enter Your Name Here...."-->
+<!--        android:textColorHint="#2196F3"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:lines="2"-->
+<!--        android:letterSpacing="0.08"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        />-->
+<!--    <ImageView-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:src="@drawable/men_img"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:id="@+id/imgView"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/nameTV"-->
+<!--        app:layout_constraintStart_toStartOf="@id/nameTV"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/nameTV"-->
+<!--        android:layout_marginBottom="5dp"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#E45E5E"-->
+<!--        android:text="Button"-->
+<!--        android:textSize="20sp"-->
+<!--        app:cornerRadius="5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:strokeColor="#4CAF50"-->
+<!--        app:strokeWidth="5dp" />-->
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/titleText"
+    android:text="Hey!race"
+    android:textSize="80sp"
+    android:textColor="@color/white"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="30dp"
+    android:fontFamily="cursive"/>
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailET"
+        android:hint="E-mail or Username"
+        android:drawableEnd="@drawable/ic_ok"
+        android:drawableTint="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="22sp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="@id/titleText"
+        android:layout_marginTop="20dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordET"
+        android:hint="Password"
+        android:drawableEnd="@drawable/ic_ok"
+        android:drawableTint="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/emailET"
+        app:layout_constraintStart_toStartOf="@id/emailET"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:lines="2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmPassET"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_del"
+        android:drawableTint="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="22sp"
+        android:lines="2"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/passwordET"
+        app:layout_constraintStart_toStartOf="@id/passwordET"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aliasET"
+        android:hint="Alias"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginStart="20dp"
+        android:drawableEnd="@drawable/ic_del"
+        android:drawableTint="@color/white"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/confirmPassET"
+        app:layout_constraintStart_toStartOf="@id/confirmPassET"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:textSize="22sp"
+        android:lines="2"
+        />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Now"
+        android:textSize="22sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/acceptTermsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:backgroundTint="#EF4A4A"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/acceptTermsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='I accept "Terms and Conditions"'
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="15dp"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/crossImg"
+    android:src="@drawable/ic_del"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    app:tint="@color/white" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

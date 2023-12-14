@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_img"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Md. Rakibul Islam Dipu"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message or Follow my Facebook account"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#2196F3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"
+            android:paddingHorizontal="40dp"
+            android:layout_marginEnd="40dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"
+            android:paddingHorizontal="50dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

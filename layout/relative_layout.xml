@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img">
+
+    <ImageView
+        android:id="@+id/clearImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/titleText"
+        android:src="@drawable/ic_clear"
+        app:tint="@color/white" />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clearImg"
+        android:layout_centerHorizontal="true"
+        android:text="Hey!race"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_ok"
+        android:drawableTint="@color/white"
+        android:hint="User Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_ok"
+        android:drawableTint="@color/white"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_ok"
+        android:drawableTint="@color/white"
+        android:hint="Confirm Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_ok"
+        android:drawableTint="@color/white"
+        android:hint="Department"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/resButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/department"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#E45858"
+        android:paddingVertical="15dp"
+        android:text="Register"
+        android:textSize="20sp"
+        app:cornerRadius="2dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="0.1"
+        android:text='I accept "Terms and Conditions"'
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
